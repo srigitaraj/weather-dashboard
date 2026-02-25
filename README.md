@@ -39,11 +39,11 @@ JavaScript’s Date() object extracts the month from the selected date.
 
 Conditional statements determine temperature based on month ranges:
 
-January–March → 25°C
+January–March → 35°C
 
-April–May → 27°C
+April–May → 37°C
 
-July–December → Cyclic values (23°C, 22°C, 21°C, 20°C)
+July–December → Cyclic values (33°C, 32°C, 31°C, 30°C)
 
 React useState hook dynamically updates and renders temperature.
 
