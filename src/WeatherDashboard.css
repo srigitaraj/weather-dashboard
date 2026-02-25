@@ -1,0 +1,79 @@
+git add .
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(
+    135deg,
+    #4e73df,
+    #6f42c1,
+    #9b59b6,
+    #36b9cc
+  );
+  background-size: 400% 400%;
+  animation: gradientFlow 12s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.weather-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 20px;
+  width: 380px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.weather-card:hover {
+  transform: translateY(-5px);
+}
+.main-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+input[type="date"] {
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(45deg, #ff6b6b, #f06595);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(255, 105, 135, 0.5);
+}
+.weather-card p {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
